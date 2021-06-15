@@ -1,0 +1,716 @@
+Reverse indexing 
+	[‘h’,’e’,’l’,’l’,’o’]
+	Index of h is 0, but index of ‘o’ is -1 , ‘l’ is -2 till ‘e’ is -4
+
+Slicing 
+	Mystring[3:] is from index 3(inclusive) till the last index
+	Mystring[:3] is from index 0 to index 3(exclusive)
+	Mystring[x:y] is from index ‘x’ (inclusive) till index ‘y’(exclusive)
+	Mystring[x:y:z] is go from ‘x’(inclusive) till index ‘y’(exclusive) in steps of ‘z’
+	While slicing, if you don’t mention ‘y’ still it wont give you out of bounds error
+	Mystring[::-1] goes from last to first ( all inclusive)
+
+Splitting 
+	x.split(‘x’) 
+	Default ‘x’ is whitespace
+
+.format()
+	‘This is a {}’.format(‘String’)) 
+	Gives output -> This is a String
+
+	‘This is a {1} {0}’.format(‘String’,’shit’))
+	Gives output -> This is a shit String
+
+	Whereas  ‘This is a {1} {1}’.format(‘String’,’shit’))
+	Prints -> This is a shit shit
+
+	‘This is a {sh} {st}’.format(st=‘String’,sh=’shit’))
+	prints-> This is a shit String
+
+	Float formatting using .format()
+	print(“the result was {r:w.p f}”.format(r=result))
+		The full syntax is {value:width.precision f}
+
+Lists
+	Concatenate 
+		List1+list2
+	Sorting
+		list.sort()
+	Reverse 
+		list.reverse()
+
+Dictionary 
+	d.keys()
+	d.values()
+	d.items()
+
+Tuple
+	Immutable
+	t.count(x)
+	Returns how many times ‘x’ is present in the tuple 
+	
+	t.index(‘x’)
+	Returns first index of ‘x’ in the tuple 
+
+Set 
+	Only unique elements
+	myset.add(x)
+		Inserts ‘x’ in myset if ‘x’ in not present in myset
+	Make a list into a set - set(mylist)
+
+File io 
+	myfile = open(‘myfile.txt’)
+	myfile.read() -> outputs the file but cursor goes to the end of the file 
+	myfile.seek(0) -> moves cursor to the begin 
+	myfile.readlines() -> list of all lines in myfile.txt
+	myfile.close()
+	myfile.write(‘four asses in this course’)
+	with open(‘myfile.txt’, mode=’x’) as f:
+		f.write(‘four asses on this course’)
+
+Tuple unpacking 
+
+	mylist = [(1,2),(3,4),(5,6),(7,8)]
+	For a,b in mylist:
+		print(a+b)
+			Prints : 3,7,11,15
+	d = {‘k1’:1,’k2’:2}
+	for key,value in d.items: 
+		print(value)
+			prints -> 1 2
+			But if the loop is like 
+			For item in d:
+				print(item)
+					Prints only keys -> k1, k2
+
+
+enumerate
+	syntax - enumerate(iterable_dataitem)
+	returns - tuple (index, item)
+	tuple unpacking can be used to hold the tuple in 2 vars
+	eg. for index,letter in enumerate(word):
+			print("{} and {}".format(index,letter))
+
+zip
+	zips together entries into a tuple 
+	eg. mylist1=[1,2]
+		mylist2=['a','b']
+		for item in zip(mylist1,mylist2):
+			print(item)
+
+	prints
+		(1,'a')
+		(2,'b')
+
+	if length of entries unequal, zips till the  shortest length of all arguments
+
+how to import library 
+	from library_name import sub_library
+
+how to accept input 
+
+	result = input()
+	whatever is put into the input, is accepted as a string
+	if you want to convert it to other type say int , then cast it as int(result) or directly int(input())
+
+list comprehension 
+	 word='hello'
+	 mylist = [i for i in word]
+
+	 celc = [0,10,20]
+	 far = [((9/5)*temp +32) for temp in celc]
+
+	 if else statements can be put into list comprehension, but not recommended as it sacrifices readability
+
+	 list1=[2,4,6]
+	 list2=[1,10,100]
+
+	 res = [x*y for x in list1 for y in list2]
+	 gives list1*list2
+
+help(mylist.insert) gives you details about insert function
+
+functions in python 
+	
+	def keyword
+		def function_name():
+		def function_name(name):
+			return 'chutiya hai '+name
+		def function_name(name='deafult_value'):
+			return 'chutiya hai '+name
+
+	if a function returns a tuple, you can do tuple unpacking while you call the function
+
+	*args
+		dynamic number of arguments to a function 
+		eg. def myfunc(*args):
+				print(args)
+		prints all the arguments as a tuple
+
+		'args' is just a var name and can be anything but '*' is important
+		by convention we choose *args
+
+	**kwargs
+		similar to args, but instead of tuple, prints all args as dictionary
+		the arguments of calling function should me as follows
+		myfunc(fruit='orange') 
+		basically argument should a key value pair
+
+	Map
+		syntax -> map(function,iterable_dataitem)
+
+		eg
+			let func be a function that squares the argument
+			mylist = [1,2,3,4,5]
+
+			mylist1 = map(func,mylist)
+			now all elements in mylist will be squared and stored as <map> type in mylist1
+
+			note: we only pass the function name and not call it
+
+	Filter
+		syntax-> filter(function,iterable_dataitem)
+
+		eg
+			here function returns true and false and is basically like a checker for the iterable_dataitem
+
+	Lambda expressions
+		syntax -> lambda argument_name:return_value
+		
+		this can be used in map, filter replacing the function by an inplace lambda expression
+
+		map(lambda num:num**2,mynums)
+
+		lambda expression can be given a name by assigning it to a variable, but we use lambdas for 1 time execute and not for replacing 
+
+
+OOP
+	class keyword
+		class CamelCaseName():
+			def __init__(self,param1):
+				self.param1=param1
+
+			def some_name(self):
+				print(self.param1)
+
+	self keyword is used to connect the member function to the class
+	__init__ is a constructor
+	we define the data members before the __init__ function
+
+	class object attribute(data member) can be referred as self.attributeName or ClassName.attributeName
+
+	Inheritance
+		  reuse the functionality of the parent class
+		  eg.
+		  class Animal():
+		  	whoAmI= 'animal'
+		  	def __init__(self):
+		  		print('animal created')
+
+		  class Dog(Animal):
+		  	def __init__(self):
+		  		super().__init__(self)
+		  		print('dog created')
+
+		  mydog=Dog()
+		  now even if you print(mydog.whoAmI), even though whoAmI is not a direct attribute of Dog() it is inherited, it prints 'animal'
+
+	Polymorphism
+
+		Abstract class
+			this is class, which is supposed to the used as the base class and only the child classes can define methods over this base class
+		eg
+		class Animal():
+			def __init__(self,name):
+				self.name = name
+			def speak(self):
+				raise NotImplementedError("subclass must implement this abstract method")
+
+		this means we have to make a child class and implement the method 'speak' inside that child class
+
+		eg
+		class Dog(Animal):
+			def speak(self):
+				return self.name +' is me '
+
+		you can also do this re-defining the function in the child class of the same name of function as that of parent class, this is called overriding 
+
+	Magic / dunder Methods
+		mydog = Dog()
+		as we know , if we print(mydog) we will get the memory location of the object 
+
+		for this reason, we can define special function that respond to when an outside caller function expects string or expects length etc
+
+		def __str__(self):
+			return "my name is {}".format(dogname)
+
+		def __len__(self):
+			return legs
+
+
+		def __del__(self):
+			print('object deleted')
+
+			this gets executed when del is called on the class object
+
+
+
+Modules and Packages
+	modules is basically a .py file and if in the same directory one .py file and call other .py file as follows 
+		from otherfile import *
+	and then we can use all the stuff in the otherfile in working .py file
+
+	Packages are basically folders, to organise a bunch of packages 
+	to make your own package , the main folder and all subfolders must have 
+		__init__.py file
+	this file can be left empty, but this just tells python that is folder is not a normal folder but a package 
+
+	you can import modules from packages in a similar fashion 
+	from PackageName.SubPackageName import modulename
+
+
+	__name__ and __main__
+		sometimes at the end of large modules or even in small modules in some cases, we use the concept of main function 
+
+		main function basically tells if a module is run directly or is imported as a part of some other module.
+
+		it is checked as follows 
+			if __name__ == "__main__":
+				#execute a bunch of direct call statements or smthing 
+
+Errors and Exception Handling 
+	
+	try keyword 
+		this is block of code to be attempted
+	except keyword
+		this block of code gets executed only in case an error occurs in the try block 
+	finally 
+		this block of code gets executed regardless of an error or not 
+
+	you can specifically accept individual expections 
+	eg 
+	try:
+		x=sum(10,'10')
+	except TypeError:
+		print('there is a type error')
+	except:
+		print('i caught all other exceptions')
+	finally:
+		print('i always run')
+
+	you can also use try , except , else , finally 
+	here else block executes only when there is no error.
+
+
+Unit Testing 
+
+	pylint 
+		a library that checks for errors and make a report of your .py file and also gives a score out of 10, based on how close your file is to pylint standards
+
+		it checks various things like docstrings at begin of file and every function, comments, readability of code etc.
+
+		note : it deducts your score if you use space and tab combined , to improve your score , you can replace every tab by 4 spaces
+
+		to install -> pip install pylint
+
+		to run -> pylint myfile.py
+
+	unittest 
+
+		you start off by importing unittest -> import unittest
+		and you also import the .py file you want to test
+
+		say you had a .py file with a function that capitalizes the word eg monty -> Monty , my shit -> My shit
+
+		then you create a class and inherit unittest.TestCase
+			class TestClass(unittest.TestCase):
+				text = 'pyhton'
+				res = testFileName.testFunctionName(text)
+				self.assertEqual(res,'Python')
+
+			if __name__="__main__":
+				unittest.main()
+
+		if all goes well, it gives you OK and number of cases passed , else it gives you what was the error etc
+
+
+
+Decorators
+	
+	you can if you want define functions inside of other functions but then their scope is limited to the function in which they are defined
+
+	you can also pass function name as arguments (note : not the function call, but function name) and manipulate the argument as any other argument
+
+	therefore decorator is basically like a gift wrapper, and the function which we pass in as the argument is the gift
+
+	eg.
+
+	def new_decorator(original_func):
+		def wrap_up():
+			print('top of wrapper')
+			original_func()
+			print('bottom of wrapper')
+		return wrap_up()
+
+	def i_need_decorator():
+		print("i m the gift")
+
+	instead of passing in the i_need_decorator to the new_decorator function, you can use the '@' operator to automatically pass it into the decorator
+	to do this , you define i_need_decorator as 
+
+	@new_decorator
+	def i_need_decorator():
+		print("i m the gift")
+
+
+Generator
+	
+	a generator, eg. range(0,10) doesn't generate all numbers from 0 to 9 and hold them in the memory instead they do it dynamically and generate a single number and wait for the next call, and generate the next accourdingly
+
+	eg 
+	def cubes(n):
+		for x in range(n):
+			yield x**3
+
+	for x in cubes(10)
+		print(x)
+
+	now cubes is way more memory efficient, as it doesn't generate a list and then let the for loop iterate through it , rather it generates as the calls come, i.e. one by one
+
+	to convert iterable objects into iterators, use iter() function eg. iter(string_name)
+
+
+Advanced Pyhton Modules
+
+	Counter
+
+		counts the occurences of different objects in a list
+		this also works with string, so occurences of characters in a string
+
+		eg
+
+		from collections import Counter 
+		my_list = [1,1,1,2,2,3,3,3,4]
+
+		Counter(my_list)
+
+		you can assign Counter(my_list) so as to use various functions in counter module
+		eg 
+		c = Counter(my_list)
+
+		c.most_common(how_many_most_common_you_wanaa_see)
+		returns a list of tuples of most common element and occurances
+
+	Default Dictionary 
+
+		it is a dictionary, which has some default value for the keys which do not exist, meaning if you try to d['wrong_key'] instead of giving an keyerror it would return you the default value
+		it can be used kidna like a hashmap in cpp
+
+		eg 
+		from collections import defaultdict
+		d= defaultdict(lambda: 0)
+
+	NamedTuple
+
+		for tuples that are large or the indices you do not know, it connects the elements of the tuple to some name 
+		more so it is like a mix between a class and a tuple 
+
+		from collections import namedtuple
+
+		Dog = namedtuple('type_name',[list_of_attributes])
+
+		here Dog is an object 
+
+		sam = Dog(age=5, breed='husky',name='sam')
+
+		and you can do sam.age , it would return 5 etc
+
+	OS
+
+		import os
+
+		os.getcwd() - returns current working directory
+		os.listdir() - lists every file in the directory
+		os.walk() - directory tree generator
+			for folder, sub_folder, files in os.walk(os.getcwd())
+
+	Shell utility
+
+		import shutil
+
+		shutil.move(src,dst)
+
+
+	datetime
+		import datetime
+
+		print(datetime.time(hour,min,sec,microsec)) - prints hour:min:sec.microsec
+		print(datetime.date.today()) - prints current date in 'yyyy-mm-dd' format
+
+		you can also merge date and time together by 
+		import datetime from datetime
+
+		date1 = datetime(year, month, date , hour,min,sec)
+		date2 = datetime(year, month, date , hour,min,sec)
+
+		you could do simple arithmetic on it eg date 1-date2 to find the time duration , returns an object datetime.timedelta which has 2 attributes , (no of days , no of second apart in time)
+
+	random
+		import random
+
+		chose randoms from a list 
+
+		random.choices(population= my_list_name, k = number_of_choices) - with replacement, i.e. allow duplicates
+		random.sample( population= my_list_name, k = number_of_choices) - do not allow duplicates
+
+
+
+	Python debugger
+		import pdb
+
+		with this you can set trace before the line of error and trace the variables for their respective values and this may help you to identify the error
+
+		pdb.set_trace()
+
+	Regular Expressions
+
+		import re
+
+		Basic (Regular Strings)
+
+			text= 'ths is my phone, my phone is great'
+
+			re.search('phone',text) returns an object -> <re.Match object; span=(11, 16), match='phone'>
+
+			that corresponds to the first match of the word in the text
+
+			match = re.search('phone',text)
+			match.start() - returns 11
+			match.end() - returns 16
+
+			but if we want to iterate through all the matches we find and manipulate them then 
+
+			for match in re.finditer('phone',text):
+				print(match)
+
+		Moderate (Actual regex expressions)
+
+			regex char , meaning and example 
+			\d , number , \d\d\d\d-\d\d-\d\d to grab a date
+			\w , alphanumberic , \w-\w\w\w for A-b_1 (note: '_' is considered alphanumeric)
+			\s , whitespace , a\sb\sc of a b c
+			\W , non-alphanumeric
+
+			eg
+			text = 'my phone number is 880-661-7230'
+			re.search(r'\d\d\d-\d\d\d-\d\d\d\d',text)
+
+			regex quantifier , meaning , example
+			+ , when a regex char occours one or more time , \w-\w+ for 1-2 and also for 1-2345_
+			* , when a regex char occours zero or more time , \w-\w* for 1- and also for 1-23
+			{n}, when a regex char occours exactly n times, r'\d\d\d-\d\d\d-\d\d\d\d' can be replaced by r'\d{3}-\d{3}-\d{4}'
+			{m,n} ,  when a regex char occours in range of m to n times
+			{n,} , when a regex char occours 'n' or more times
+			? , when a regex char occours once or doesn't occur at all
+
+
+			match = re.compile(r'(\d{3})-(\d{3})-(\d{4})',text)
+			match.group() - returns the same as re.search's value 
+			but i can now say (note: the indexing the group function starts from 1)
+			match.group(1) returns 880
+			match.group(2) returns 661
+			match.group(3) returns 7230
+			whereas 
+			match.group() returns the matched string
+
+		Advacned (exclusion , inclusions , setence cleaning , operators etc )(note: incomplete)
+			regex operator 
+
+			or operator - | - re.search('cat|dog',' i have a dog as a pet')
+			
+			wildcard operator - . -re.search('.at','a cat sat in the hat') returns [cat,sat,hat] (note: the wildcard also counts space and other chars so it might give you unexpected results in some cases)
+
+			starts with - ^ - re.findall(r'^\d','1 is 2 and 2 is 3ab , qick maths ') returns ['1'] (note: it searches the entire 'text' and not every individual word)
+
+			ends with - $ - re.findall(r'\d$','1 is 2') returns ['2']
+
+	Timeit
+
+		import timeit
+
+		syntax -> timeit.timeit(stmt, setup , no_of_times)
+
+		stmt = '''
+		code that you want to time, eg a function call
+		'''
+
+		setup = '''
+		definition of the function you are calling in the statement
+		'''
+
+	Zip and Unzip
+
+	import zipfile
+		Zipping
+			compfile = zipfile.ZipFile('zip_name.zip','w')
+
+			compfile.write('file1.txt',compress_type = zipfile.ZIP_DEFLATED)
+			compfile.write('file2.txt',compress_type = zipfile.ZIP_DEFLATED)
+
+			compfile.close()
+
+		Zipping with shutil
+			import shutil
+
+			folder_dir = 'directory of folder to zip'
+			output_name = 'output_file_name'
+			shutil.make_archive(output_name,'zip',folder_dir)
+
+
+		Unzipping
+			compfile = zipfile.ZipFile('zip_name.zip','r')
+			compfile.extractall(path_name)
+
+		Unzipping with shutil
+			import shutil
+			shutil.unpack_archive('input_file.zip','output folder name','zip')
+
+
+Web Srcapping with Python
+
+	import requests
+	import bs4
+
+	site = requests.get('url')
+	good_site = bs4.BeautifulSoup(site.text,'lxml')
+
+	x = good_site.select('something_here')
+
+		something_here can be
+			tag like ul,img,title etc
+			classname eg .text , .toctext etc
+			id name eg #text , #toc etc
+
+	grabbing a Text 
+
+		x[0].getText() gives you the text in the tag, if exists
+
+	grabbing image
+
+		image = soup.select('.thumbimage')[0]
+
+		def writeImage(image):
+			new_img = requests.get(image['src'])
+			f = open('image['src']'+'.jpg','wb') - wb is write binary for images
+			f.write(new_img.content)
+			f.close()
+
+		above function can download all '.thumbimage' on site
+
+Working with Images
+	
+	from PIL import Image 
+
+	newfile = Image.open('pic_name.jpg')
+	newfile.show() # shows the pic
+	newfile.size #returns a tuple of (width, height)
+	newfile.filename
+	newfile.format
+
+	Cropping an image 
+
+		newfile.crop((x,y,w,h)) # x,y - upper left cordinates 	#w,h - bottom right cordinates
+
+		newfile.paste(im=image_variable,box = (x,y)) # (x,y) is upper left cordinates where u want to paste
+
+		newfile.resize(w,h)
+
+		newfile.rotate(degrees)
+
+
+	Color transparency
+
+		newfile.putalpha(x) # x can range from 0 to 255 , 0 - transparent , 255 - opaque
+
+	Saving
+
+		newfile.save('wanted_image_name.jpg')
+
+Working with PDFs and CSV
+
+	CSV
+		import csv
+
+		data = open('filename.csv',encoding='utf-8')
+
+		csv_data = csv.reader(data)
+
+		data_lines = list(csv_data)
+
+		to print data lines you could do 
+			for line in data_lines[1:]:
+				print(line)
+		note: data_lines[0] is the header, thats why we don't include it 
+
+		say the email is column 3, and i wanted to grab all the emails 
+			for line in data_lines[1:]:
+				print(line[3])
+
+		to save into a file 
+
+			savingfile = open('save_file.csv',mode ='w',newline='')
+			csv_writer = csv.writer(savingfile,delimiter=',')
+			csv_writer.writerow(['a','b','c',...]) 
+				note that the first row written will define the number of columns to write, therefore you have to be consistent with your rows insertions to include the same number of columns
+			savingfile.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+	
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
