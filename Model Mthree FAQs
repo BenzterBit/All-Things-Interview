@@ -1,0 +1,222 @@
+Tell me about yourself?
+
+	My name is Arnab Bit, a Final year Student persuing Bachelors in Computer Engineering. In am very interested in the field of software development, though i am flexible and can adapt to other technologies as well. I have worked on and studied Computer Vision, Full stack Web development and Core Languages like C++, Java, Pyhton etc. The project i am currently working on intends to explore novel attack strategies on android systems. My strength is Good Communication skills, a Good listener and Leadership skills.
+	My weakness is that i can't relax if i have got pending work which can make me look like too work focused
+	Aside from the techinical aspects I enjoy swimming , running, meditation and learning about pop-science.
+
+What are your hobbies?
+	
+	I like to meditate everyday, this brings me peace and helps me get rid of any anxiety that i might have.
+	In my leisure, i like to read/watch the new advances in techology in the world
+	I like to excercise, this keep me healthy,both in body and  in mind
+	I occasionaly also like to make mentor videos teaching about a topic of choice i feel is required on youtube.
+	I also like to read philosophy and discuss about philosphy in online communities.
+
+
+Should hobbies be productive or relaxing? What is your opinion?
+	
+I think it can a mixture of both, some hobbies which are productive can also end up being relaxing. The important fact is to talk about why we need hobbies, hobbies is like a break from work which enhances the creativity of the mind and also various hobbies can bring out various perspectives that you can apply to your job and which can really help you with your job and creativity so I think it should be a mixture of both. Hobbies can also be shared with your connections and i have personally seen many strong connections which started with a common hobby. Hobbies for ex. playing chess can improve creativity which can directly impact you job.
+
+
+What do you know about banking and investment sector ? 
+
+Banks generally make money by borrowing money from depositors and compensating them with a certain interest rate. The banks will lend the money out to borrowers, charging the borrowers a higher interest rate, and profiting off the interest rate spread.
+There are different types of banks, central (supply money in country), retail(supply money to people and people borrow loans) , commercial(gives loans and financial services to low to high end corporations), 
+investment banks make money by trading stocks, bonds, and other securities between companies and investors.  They also make money from advising individuals and corporations who need financial guidance, reorganizing companies through mergers and acquisitions, managing investment portfolios or raising money for certain businesses and the government.
+
+
+
+
+Why are you choosing a banking company for your career ?
+
+Wide range of jobs and experiences and a thriving industry
+Numerous opportunities for advancement for ambitious professionals ( can upskill, or add new skills to your skillset)
+Continuing education and community service is highly encouraged
+Excellent working conditions and hours
+
+
+
+What do you know about Morgan Stanley / CreditSuise ?
+Morgan Stanley is a leading global investment bank and wealth management firm, employing more than 50,000 people worldwide.
+The company makes money primarily from three main units: institutional securities, wealth management, and investment management.
+Institutional Securities' clients are comprised of corporations, governments, financial institutions, and high-to-ultra high net worth clients. This business segment offers services such as investment banking, sales and trading, and other products like corporate lending activities. 
+
+investment banking arm makes money by charging fees on advisory services such as restructurings and mergers and acquisitions. 
+Wealth Management operations–which provides a range of financial services and solutions to individual investors and small to medium-sized businesses/institutions
+
+
+Based on speciality, what do you like about Morgan Stanley / Credit Suise ? 
+(Describe how you as a software developer can contribute to such an organisation)
+
+
+What is your understanding of the role ? 
+As the trends change, role of a software developer is to pick them fast and apply them in order to contribute for the organisation.
+banking institutions go through several thousand transactions per day most of which are digital, thus good user experience and cyber rsecurity paradigms are a must
+managing database for high resposiveness
+keep yourself updated to the latest and the newest technology
+you get to apply new skills and improve existing skills 
+
+
+what is SDLC?
+SDLC or software development life cycle is a methodology followed for a software project, within a software organization. 
+It consists of a detailed plan describing how to develop, maintain, replace, alter or enhance specific software. 
+This helps in improving the quality of the software and enhance the devlopment process.
+
+it is generally split in 7 phases, 
+planning and requirment analysis  - plan the basic project approach, conduct product feasibility etc.
+
+Definig requirments - document the product requirments(SRS, software requirment specification) and get them approved by the customer.
+
+desgining prod architecture - using SRS as reference , different product arch are proposed and documented in DDS ( document desgin specification) which is reviewed by stakeholders and then finalized
+
+builing - actual development of the product starts, code is generated as per DDS
+
+testing - product defects and reported , tracked , fixed and retested.
+
+Deployment and maintainence - deployed for use in the market and maintained for its life cycle
+
+
+
+your thoughts on python vs java? 
+python is dynamically typed thus taking more time to execute rather compared to statically typed java code but java runs faster. 
+python code is easier to read and review, and a new programmer wont have to start from scratch because of its immense libraries, whereas java though less easier to read, its a legacy language with many existing archietecture written in java and also has a huge community.
+
+
+what is the latest technology that interests you ? 
+machine learning specially the field of computer vision and elaborate on that
+
+what do you know about banking security? 
+Banks and other financial institutions deal in millions of transactions on a daily basis. Most of these transactions are done via digital payment transfer platforms. That’s why banks have become a primary target of cyberattacks.
+Thus, it’s of high importance for banks to take preventive security measures to prevent their data against cyber attacks.
+Following may occur if a bank decides to cut cost on security,
+-data breaches ruins banks reputation 
+-financial loss to customers
+-penalities from authorities
+-customers sensitive data is also leaked
+
+
+
+when did you develop your passion for technology? or get interest in CS/IT ?
+I love computers and technology in general in so many ways because its modified the human condition almost incomprehensibly.
+For example, we have tools, we have planes, we have automation, we have communication, and the list goes on. Computer science is near the center of all things driving this “evolution” of the human condition.
+personally, 
+Solving problems through programming is beautiful, applying your brainpower to design a way to solve a problem is very satisfactory.
+technology transitions, it is constantly upgrading and is not a static feild and it helps keep me on my toes and to be spontaneous.
+
+
+
+Strengths or weaknesss with examples?
+(you know, you got this, google is my best friend)
+
+what motivates you ?
+mentoring and coaching others
+learning new things
+coming up with creative ideas to improve something, or make something new
+analysing complex data in order to draw clear and simple conclusions
+working well as part of a team
+leading a team to success
+completing a difficult project, and seeing it through to the end
+spotting flaws and errors so as to make sure the end result of a project is as good as possible
+
+
+explain a recent problem you solved ?
+(explain any recent project and problems you faced, and how you solved those)
+ 
+What do you do in your spare time to further your career interests ? 
+
+I have a hobby to interact with strangers and develop strong connections with them. I also like to brainstorm a new problem everyday, and find different ways to solve it.
+
+
+which of your skills and experiences make you suitable for this job? 
+what technologies you know ? Latest technology learnt? 
+i know Full stack web development, including React.js.
+I m very interested in the field of machine learning and computer vision and have done multiple projects on it.
+I have built customer churn prediction, loan status prediction 
+which helped me to learn the fundamental aspects of the finance institutions and how software engineering can apply to the financial sector as well.
+I have also done a Deep learning specialization from coursera that introduced and trained me is various platforms like computer vision, medical industry, natural language processing etc.
+I have excellent leadership skills which help me to make stronger connections and get the trust of my collegues. I am a good listener which adds to my leadership abilities.
+I am a creative thinker and a problem solver which fuels me to keep learning and keep upgrading my skillset. 
+
+
+What was your project about? Deep dive 
+my most recent project explores adversarial attack strategies in android systems. 
+We create two adversarial attack strategies against malware dection systems in android systems. 
+Given a permission lists of malicious softwares we attempt to change their permissions such that the anti-malware system classifies them as benign software. 
+My contribution in this project was the model development and the role of team lead. As a team lead I co-ordinated various tasks and distributed them amonst teammates. I wrote classes for all of the models, integrated it to the main training system and tested the models accuracy. 
+We achieve good results and our paper got accepted at an international conference.
+
+
+why did you choose this project ? 
+it was because it was based on android phones which contribute of the largest os in smartphones. and beacuse it is used by such a majority the security in these smartphones are of paramont importance. our primary goal of the project was to breach the malware detection systems in android systems.
+These adversarial data would be then used to train other pre-existing machine learning models to increase the detection rate for other adversial real world samples.
+
+
+
+
+Explain a project you finished independentaly. How did you ensure you were progressing correctly?
+i was doing an android application development project where i made A privacy-focused social media application which allows users to sign in, register, send texts, images, while maintaining their privacy by removing seen messages, not allowing Screenshots, all by using native android and firebase. I used the concepts from sdlc , which started as a planning which cemented by basic approach to the problem. 
+then i wrote down my requirment and the features i wished to implement, then i came of with the archietecture and according to which is began development. After development , testing  phasse was the most crucial as well as the most exhausting and then i deployed my project on my personal phone which i used to chat with my friend secretly.
+
+
+What challenges did you face doing the project ?
+The main challenge i faced  is of making the archietecture of the project, and testing step. it was redundant and some things were outdated, which meant a lot of reading the code, refering to the blogs and asking the community for help. 
+ 
+
+
+What is the role of software developer in banking ?
+Just like any other company, financial institutions need certain systems to operate well. Only software engineers have the ability to ensure that these systems are scalable, and responsive under a high load. These systems can help attract more financial opportunities or help companies dominate their sector.
+Cases of system breaches or credit card theft are rampant in finance. Software developers need to lend a hand to institutions such as banks to prevent any information security threats. Their task will entail developing programs that can combat threats.
+
+
+How is production support different from software development?
+
+Production Support
+Pros:
+Besides understanding the code, you will understand the design, analysis from the user’s perspective.
+And a well-rounded developer with communication skills and domain knowledge is capable of doing this well.
+You will be better at identifying and filling in the gaps the business analysis phase
+
+Cons:
+You will have less idle time in case of Severity 1,2 issues. Production support is unpredictable and can involve impromptu urgency
+You may be on-call support and need to attend the issue ASAP wherever you are and you are expected to deliver results instead of explanations.
+Replicating some Production issues may not be easy especially if some one else has developed the code and you fix it.
+
+Software Development 
+Pros:
+Job satisfaction, if you have the enthusiasm to build something from scratch and modify accordingly and maintain it in the advanced versions
+You have more command on the functionality as you have done thorough analysis before coding
+Flexible hours as you can develop the code before the expected deadline during development phase as it may not require your attention to impromptu urgency during development phase and if the coding is perfect, even during testing and production phase
+
+Cons:
+There’s a lot to know, and one can’t possibly know it all – or even a good part of it, in a reasonable amount of time
+You have to be flexible during testing as the requirements may change in the drop of a hat and you are expected to code accordingly
+It’s a never ending learning process as technology changes in the blink of an eye.
+
+
+
+
+Explain a situation where you had to work as a team? What was your role?
+
+There are multiple events where i had to work as a team,
+First, i was the leader of my group and we as a team qualified at the internal Hackathon, of Smart India Hackaton 2020. Here i had to listen to everyone's arguments and take the final call, a team mate was very critical of the algorithm we were going to use and i was able to convince him, by going over forums and blogs and at the end called a vote. 
+
+I was also the inter departmental head at Department of Engineering Student Association in my first year, i had done a lot of extra ciricular work, talked to many seniors and held collaborative events, and had an overall positive association with the student body in the entire department.
+
+Tells us about yourself which is not in the Resume?
+(just mention your hobbies, thats all and your interests)
+
+I like to meditate everyday, this brings me peace and helps me get rid of any anxiety that i might have.
+	In my leisure, i like to read/watch the new advances in techology in the world
+	I like to excercise, this keep me healthy,both in body and  in mind
+	I occasionaly also like to make mentor videos teaching about a topic of choice i feel is required on youtube.
+	I also like to read philosophy and discuss about philosphy in online communities.
+
+What do you know about Wileymthree? Why do you want to work with Wileymthree?
+
+Wiley mthree is talent partner to global blue-chip enterprises, understanding their business and workforce requirements to ensure commercial outcomes are achieved. You source, train and hire diverse outstanding people with the skills that are most in-demand and embed them seamlessly into your clients’ teams over the course of upto 24 months, at which point they can be converted to full-time employees. 
+Alternatively, wiley mthree can also reskill a client’s employees.
+Mthree operates a leading global community of trained technologists’ and professionals across the experience spectrum, from interns & graduates through to career changers, veterans and seasoned experts.
+
+
+
+
